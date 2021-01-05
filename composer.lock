@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56abc574c9c50fc6e4b7f5ef2a76cd50",
+    "content-hash": "9ed9736bdc17b9b91192ce15c1079924",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4649,6 +4649,89 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "tzsk/payu",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tzsk/payu.git",
+                "reference": "af008fa77ee332af3ff07861fa77a14494e63ae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tzsk/payu/zipball/af008fa77ee332af3ff07861fa77a14494e63ae7",
+                "reference": "af008fa77ee332af3ff07861fa77a14494e63ae7",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.0|^8.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "guzzlehttp/guzzle": "^7.0",
+                "laravel/legacy-factories": "^1.0",
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^9.3",
+                "psalm/plugin-laravel": "^1.2",
+                "spatie/phpunit-snapshot-assertions": "^4.0",
+                "vimeo/psalm": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tzsk\\Payu\\PayuServiceProvider"
+                    ],
+                    "aliases": {
+                        "Payu": "Tzsk\\Payu\\Facades\\Payu"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tzsk\\Payu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tzsk",
+                    "email": "mailtokmahmed@gmail.com",
+                    "homepage": "https://tzsk.githu.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PayU India Payment Gateway Integration with Laravel",
+            "homepage": "https://github.com/tzsk/payu",
+            "keywords": [
+                "geteway",
+                "laravel 5 payment gateway",
+                "laravel payu",
+                "payment",
+                "payment gateway",
+                "payu",
+                "payu gateway with verification",
+                "payu payment gateway",
+                "payu payment verification laravel",
+                "tzsk",
+                "verification"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/KMAhmed",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tzsk",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-11T16:20:46+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.2.0",
             "source": {
@@ -7347,5 +7430,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
